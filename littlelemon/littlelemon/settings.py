@@ -90,6 +90,7 @@ DATABASES = {
         'PASSWORD': 'F!r3st4rt3r185030',
         'HOST': '127.0.0.1',
         'PORT': '3306',
+        #'AUTOCOMMIT': False,
         'OPTIONS': {
         }
     }
@@ -170,4 +171,8 @@ REST_FRAMEWORK = {
 
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
     'PAGE_SIZE': 4
+}
+
+DJOSER = {
+    "USER_ID_FIELD": "username"
 }
